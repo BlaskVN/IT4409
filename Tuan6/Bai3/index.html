@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Truyện Tiểu Thuyết - Book Bủh Bủh Lmao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Bủh Bủh Lmao - Cửa Hàng Truyện Tiểu Thuyết</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#products">Sản Phẩm</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Chào Mừng Đến Với Book Bủh Bủh Lmao</h2>
+            <p>
+                Nơi hội tụ những tác phẩm tiểu thuyết hay nhất từ khắp nơi trên thế giới. 
+                Chúng tôi tự hào mang đến cho bạn những câu chuyện đầy cảm xúc, 
+                tri thức và nguồn cảm hứng bất tận. Hãy để chúng tôi đồng hành cùng bạn 
+                trong hành trình khám phá thế giới văn học tuyệt vời!
+            </p>
+        </section>
+
+        <section id="products">
+            <h2>Sản Phẩm Nổi Bật</h2>
+            
+            <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+            <button id="searchBtn">Tìm</button>
+            <button id="addProductBtn">Thêm sản phẩm</button>
+            
+            <form id="addProductForm" class="hidden">
+                <h3>Thêm Sản Phẩm Mới</h3>
+                <label for="productName">Tên sản phẩm:</label>
+                <input type="text" id="productName" required>
+                
+                <label for="productDesc">Mô tả:</label>
+                <textarea id="productDesc" required></textarea>
+                
+                <label for="productPrice">Giá:</label>
+                <input type="text" id="productPrice" required>
+                
+                <button type="submit">Thêm</button>
+            </form>
+            
+            <div id="product-list">
+                <article class="product-item">
+                    <img src="https://sachtiengviet.com/cdn/shop/products/c62a8e0548ab224cb60f35c6e086f671_700x700_crop_center.jpg?v=1681155266" alt="Arya bàn bên thi thoảng lại trêu ghẹo tôi bằng tiếng Nga 1">
+                    <h3 class="product-name">Arya bàn bên thi thoảng lại trêu ghẹo tôi bằng tiếng Nga 1</h3>
+                    <p>
+                        Tác phẩm của Sunsunsun kể về cuộc sống của một cô gái trẻ tên Roshidere,
+                        người đã trải qua nhiều khó khăn và thử thách để tìm kiếm hạnh phúc.
+                    </p>
+                    <p class="price">89.000đ</p>
+                </article>
+
+                <article class="product-item">
+                    <img src="https://sachtiengviet.com/cdn/shop/products/7068dcf9dafe0f16cb35adf7e0334089.jpg?v=1681155434" alt="Arya bàn bên thi thoảng lại trêu ghẹo tôi bằng tiếng Nga 2">
+                    <h3 class="product-name">Arya bàn bên thi thoảng lại trêu ghẹo tôi bằng tiếng Nga 2</h3>
+                    <p>
+                        Phần 2 của series tiếp tục mang đến cho độc giả những câu chuyện hài hước, 
+                        dí dỏm và đầy bất ngờ về cuộc sống hàng ngày.
+                    </p>
+                    <p class="price">95.000đ</p>
+                </article>
+
+                <article class="product-item">
+                    <img src="https://vn-test-11.slatic.net/p/2f7c233aab125ce6dd3fa79c6c1af3fb.jpg" alt="Arya bàn bên thi thoảng lại trêu ghẹo tôi bằng tiếng Nga 3">
+                    <h3 class="product-name">Arya bàn bên thi thoảng lại trêu ghẹo tôi bằng tiếng Nga 3</h3>
+                    <p>
+                        Phần 3 của series tiếp tục hành trình đầy thú vị với những tình huống 
+                        bất ngờ và cảm xúc.
+                    </p>
+                    <p class="price">75.000đ</p>
+                </article>
+            </div>
+        </section>
+
+        <form id="contact">
+            <h2>Liên Hệ</h2>
+            <label for="name">Tên:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Nội Dung:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Gửi</button>
+        </form>
+    </main>
+
+    <footer>
+        <p><strong>Cửa Hàng Truyện Tiểu Thuyết - Book Bủh Bủh Lmao</strong></p>
+        <p>Điện thoại: 0123-456-789</p>
+        <p>&copy; 2025 Book Bủh Bủh Lmao. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
