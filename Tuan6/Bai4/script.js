@@ -28,7 +28,6 @@ searchBtn.addEventListener('click', function() {
 });
 
 // Xử lý sự kiện khi người dùng nhấn nút "Thêm sản phẩm"
-// Sử dụng classList.toggle để bật/tắt class 'hidden' (hiển thị/ẩn form)
 addProductBtn.addEventListener('click', function() {
     addProductForm.classList.toggle('hidden');
 });
@@ -53,22 +52,18 @@ addProductForm.addEventListener('submit', function(event) {
     const desc = document.getElementById('newDesc').value.trim();
     
     // Validate dữ liệu
-    // Kiểm tra tên sản phẩm không được rỗng
     if (name === '') {
         errorMsg.textContent = 'Vui lòng nhập tên sản phẩm!';
         return;
     }
     
-    // Kiểm tra giá phải là số hợp lệ và lớn hơn 0
     if (price === '' || isNaN(price) || Number(price) <= 0) {
         errorMsg.textContent = 'Vui lòng nhập giá hợp lệ (số lớn hơn 0)!';
         return;
     }
     
-    // Nếu tất cả dữ liệu hợp lệ, xóa thông báo lỗi
     errorMsg.textContent = '';
     
-    // Tạo phần tử sản phẩm mới
     const newItem = document.createElement('article');
     newItem.className = 'product-item';
     
